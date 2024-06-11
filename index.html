@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">M. Wade</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#supports">Supports</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">M. Wade</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#supports"onclick="toggleMenu()">Supports</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="asset1.jpeg" alt="M. Wade profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Wade</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2"onclick="window.open('Resume.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="asset2.webp"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/m-w-989bbb273'"/>
+          <img
+            src="asset3.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/mdwade420'"/>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="asset4.webp"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="asset5.jpeg"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="asset6.jpeg"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p id="changingText">
+              Hi, I'm a student attending for my bachalors in information management and systems. 
+              I'm an avid learner of code and have a strong personal interest in learning lanuages and culture.  
+              I've done 5 years of spanish, 2 or german and am currently learning arabic, gujarati, and urdu.
+              I enjoy being outdoors rather it's hiking, rock-climbing, or go-carting.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="asset8.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="asset9.jpeg" alt="Experience icon" class="icon"/>
+                <div><h3>HTML</h3><p>Experienced</p></div>
+              </article>
+              <article><img src="asset9.jpeg" alt="Experience icon" class="icon"/>
+                <div> <h3>CSS</h3> <p>Experienced</p> </div>
+              </article>
+              <article>
+                <img src="asset9.jpeg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+                <article>
+                    <img src="asset9.jpeg" alt="Experience icon" class="icon"/>
+                    <div><h3>Java</h3><p>Basic</p>
+                    </div>
+                  </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+      src="asset8.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#supports'"
+    />
+    </section>
+    <section id="supports">
+    <p class="section__text__p1">In life we often find ourselves in situation that lead us to support and upbring communties and people that reflect on the experience of our past.</p>
+    <h1 class="title">Support With Me</h1>
+    <div class="section-container" id="support-intaid">
+      <img src="asset13.jpeg" alt="The People of Our World" class="section__pic-container">
+      <div class="details-container main-section-details-container" id="internationalaid-section-details-container">
+        Bring all of our people together, as we all share a common point
+        <br><p>“You are not Atlas carrying the world on your shoulder. It is good to remember that the planet is carrying you.”— Vandana Shiva</p>
+        <br><div class="details-container intaid-details-container" onclick="location.href='https://hdfund.org/gaza-relief/?gad_source=1&gclid=Cj0KCQjwpZWzBhC0ARIsACvjWRMEaw5Exi_-AdJRpbC2Ejh9n5zannfbsW-k-Kr3CfqmaKVJ3Pss5gIaAtI6EALw_wcB'">Gaza Relief.Donate</div>
+        <br><div class="details-container intaid-details-container" onclick="location.href='https://give.globalchristianrelief.org/give/474026/?gad_source=1&gclid=Cj0KCQjwpZWzBhC0ARIsACvjWROm8paLMLP_5nBB_DLK_U0qvLRcM1inouGJgAVTO9gxIFIqwg3GNRUaAlxhEALw_wcB#!/donation/checkout?utm_source=semp&utm_medium=paidsearch&c_src=23SRP&c_src2=23SRP-SP1'">Global Christian Relief.Donate</div>
+        <br><div class="details-container intaid-details-container" onclick="location.href='https://act.pih.org/haiti-crisis?ms=pdgg&hsa_acc=2916381410&hsa_cam=18683975253&hsa_src=x&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjwpZWzBhC0ARIsACvjWRM1WfwG8Q5epEVYPi6cQbxUQ_CTpav93JDN6ll7DjRV2agOzWfTzxcaAmwEEALw_wcB&utm_campaign=delve_awareness_pmax&utm_source=google&utm_medium=cpc'">Support Haiti.Donate</div>
+        <br><div class="details-container intaid-details-container" onclick="location.href='https://hfu.org/give/?gad_source=1&gclid=Cj0KCQjwpZWzBhC0ARIsACvjWRNvhD2S3fkUGUnz5wbQwR2Vb0Hr8d2r2rzPpwAnnrvVzUWZ0IoFt1gaAsxWEALw_wcB'">Support Ukraine.Donate</div>
+        <br><div class="details-container intaid-details-container" onclick="location.href='https://libertyinnorthkorea.org/donate'">Liberty of North Koreans.Donate</div>
+        <br><div class="details-container intaid-details-container" onclick="location.href='https://womenforafghanwomen.org'">Women of Afganistan.Donate</div>
+        <br><div class="details-container intaid-details-container" onclick="location.href='https://www.globalgiving.org/search/?size=25&nextPage=1&sortField=sortorder&selectedLocations=00kosovo&loadAllResults=true'">Support Kosovo.Donate</div>
+      </div>
+      </div>
+    <div class="section-container" id="support-women">
+    <img src="asset10.jpeg" alt="Women Against Abuse Logo" class="section__pic-container">
+    <div class="details-container main-section-details-container" id="women-section-details-container">
+      Support the stop of abuse toward women, girls, daughters, wives in all the positions they find themselves in.  
+        <br><p>“If the numbers we see in domestic violence were applied to terrorism or gang violence, the entire country would be up in arms, and it would be the lead story on the news every night.“ - Representative Mark Green</p>
+        <br><div class="details-container support-details-container" onclick="location.href='https://www.womenagainstabuse.org/donate'">Women Against Abuse.Donate</div>
+        <br><div class="details-container support-details-container" onclick="location.href='https://ncadv.org/donate'">National Coalition Against Domestic Violence.Donate</div>
+    </div>
+    </div>
+    <div class="section-container" id="support-nature">
+    <img src="asset12.jpeg" alt="Tree Man Holding Leaves" class="section__pic-container">
+    <div class="details-container main-section-details-container" id="nature-section-details-container">
+      Fight for our world to keep it green and breathing.  
+      <div>“To leave the world better than you found it, sometimes you have to pick up other people’s trash.” — Bill Nye</div>
+      <br><div class="details-container nature-details-container" onclick="location.href='https://www.spartanburgconservation.org'">Spartanburg Conservation.Donate</div>
+      <br><div class="details-container nature-details-container" onclick="location.href='https://www.conesteepreserve.org/give'">Conestee Preserve.Donate</div>
+    </div>
+    </div>
+      <img
+          src="asset8.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+    </section>
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="asset11.jpeg"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:wademacahi@gmail.com">0mwintegrated@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="asset2.webp"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/m-w-989bbb273/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#supports">Supports</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 M. Wade. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
